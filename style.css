@@ -1,0 +1,254 @@
+/* basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+  font-family: Georgia, serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========================
+   AUTH BOX (login + register)
+======================== */
+
+.auth-box {
+  background-color: #111;
+  border: 1px solid #2a2a2a;
+  border-top: 4px solid #c0392b;
+  border-radius: 10px;
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #e74c3c;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 26px;
+}
+
+/* inputs */
+.auth-box input {
+  width: 100%;
+  padding: 12px 14px;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #eee;
+  font-size: 14px;
+  font-family: Georgia, serif;
+  margin-bottom: 14px;
+  outline: none;
+}
+
+.auth-box input:focus {
+  border-color: #e74c3c;
+}
+
+/* button */
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Georgia, serif;
+  transition: background-color 0.3s;
+  margin-bottom: 12px;
+}
+
+.auth-box button:hover {
+  background-color: #a93226;
+}
+
+/* error and success messages */
+.error-msg {
+  color: #ff4444;
+  font-size: 13px;
+  text-align: center;
+  min-height: 18px;
+}
+
+.success-msg {
+  color: #f39c12;
+  font-size: 13px;
+  text-align: center;
+  min-height: 18px;
+}
+
+/* switch link */
+.switch-link {
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  margin-top: 14px;
+}
+
+.switch-link a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+.switch-link a:hover {
+  text-decoration: underline;
+}
+
+/* ========================
+   DASHBOARD
+======================== */
+
+body.dash-body {
+  display: block;
+  background-color: #0d0d0d;
+}
+
+.dash-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background-color: #111;
+  border-bottom: 3px solid #c0392b;
+  position: sticky;
+  top: 0;
+}
+
+.logout-btn {
+  padding: 8px 20px;
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #a93226;
+}
+
+.dash-box {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.dash-box h1 {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.dash-box h1 span {
+  color: #e74c3c;
+}
+
+.dash-sub {
+  font-size: 15px;
+  color: #888;
+  margin-bottom: 40px;
+}
+
+/* dashboard cards */
+.dash-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.dash-card {
+  background-color: #111;
+  border: 1px solid #2a2a2a;
+  border-left: 4px solid #c0392b;
+  border-radius: 8px;
+  padding: 24px 20px;
+  width: 260px;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.dash-card:hover {
+  transform: translateY(-4px);
+}
+
+.dash-card h2 {
+  font-size: 16px;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.dash-card p {
+  font-size: 13px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+/* user info box */
+.user-info {
+  background-color: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.user-info h3 {
+  font-size: 16px;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.user-info p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.user-info span {
+  color: #fff;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .dash-nav {
+    padding: 14px 20px;
+  }
+
+  .dash-box h1 {
+    font-size: 24px;
+  }
+
+  .dash-card {
+    width: 100%;
+  }
+}

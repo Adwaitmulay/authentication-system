@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login — JARVIS Auth</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="auth-box">
+
+    <div class="logo">🦾 JARVIS</div>
+    <p class="tagline">Welcome back, Agent</p>
+
+    <input type="email" id="loginEmail" placeholder="Email Address" />
+    <input type="password" id="loginPassword" placeholder="Password" />
+
+    <button onclick="loginUser()">Login</button>
+
+    <p id="loginError" class="error-msg"></p>
+
+    <p class="switch-link">Don't have an account? <a href="register.html">Register here</a></p>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

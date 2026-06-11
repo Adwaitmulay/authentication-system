@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard — JARVIS Auth</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- navbar -->
+  <div class="dash-nav">
+    <div class="logo">🦾 JARVIS</div>
+    <button onclick="logoutUser()" class="logout-btn">Logout</button>
+  </div>
+
+  <!-- dashboard content -->
+  <div class="dash-box">
+
+    <h1>Welcome, <span id="dashName">Agent</span> 👋</h1>
+    <p class="dash-sub">You have successfully logged in to the JARVIS system.</p>
+
+    <div class="dash-cards">
+
+      <div class="dash-card">
+        <h2>⚙️ System Status</h2>
+        <p>All systems are online and running at full capacity.</p>
+      </div>
+
+      <div class="dash-card">
+        <h2>🛡️ Security Level</h2>
+        <p>Access level: <strong>AUTHORIZED</strong></p>
+      </div>
+
+      <div class="dash-card">
+        <h2>📡 Network</h2>
+        <p>Connected to Stark Industries secure server.</p>
+      </div>
+
+    </div>
+
+    <div class="user-info">
+      <h3>Your Account</h3>
+      <p>Email: <span id="dashEmail"></span></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
